@@ -72,3 +72,6 @@
 [19/Jan/2023:15:51:58 -0300] 404 - GET http localhost "/index.php" [Client 172.31.0.1] [Length 183] [Gzip 3.21] "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 OPR/94.0.0.0" "-"
 [19/Jan/2023:15:51:58 -0300] 400 - GET http localhost "/favicon.ico" [Client 127.0.0.1] [Length 230] [Gzip -] "-" "-"
 [19/Jan/2023:15:52:26 -0300] 400 - GET http 127.0.0.1 "/favicon.ico" [Client 127.0.0.1] [Length 230] [Gzip -] "-" "-"
+[20/Jan/2023:10:22:04 -0300] 404 - GET http localhost "/index.php" [Client 172.20.0.1] [Length 183] [Gzip 3.21] "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 OPR/94.0.0.0" "-"
+[20/Jan/2023:10:22:04 -0300] 400 - GET http localhost "/favicon.ico" [Client 127.0.0.1] [Length 230] [Gzip -] "-" "-"
+[20/Jan/2023:10:22:18 -0300] 400 - GET http 127.0.0.1 "/favicon.ico" [Client 127.0.0.1] [Length 230] [Gzip -] "-" "-"
