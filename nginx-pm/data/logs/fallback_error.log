@@ -1,3 +1,4 @@
 2023/01/10 21:26:25 [error] 281#281: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 172.24.0.1, server: nginxproxymanager, request: "POST /api/tokens HTTP/1.1", upstream: "http://127.0.0.1:3000/tokens", host: "localhost:81", referrer: "http://localhost:81/login"
 2023/01/19 14:53:37 [error] 312#312: *1 open() "/var/www/html/index.php" failed (2: No such file or directory), client: 172.29.0.1, server: localhost-nginx-proxy-manager, request: "GET /index.php HTTP/1.1", host: "localhost"
 2023/01/19 15:51:58 [error] 311#311: *2 open() "/var/www/html/index.php" failed (2: No such file or directory), client: 172.31.0.1, server: localhost-nginx-proxy-manager, request: "GET /index.php HTTP/1.1", host: "localhost"
+2023/01/20 10:22:04 [error] 439#439: *1 open() "/var/www/html/index.php" failed (2: No such file or directory), client: 172.20.0.1, server: localhost-nginx-proxy-manager, request: "GET /index.php HTTP/1.1", host: "localhost"
