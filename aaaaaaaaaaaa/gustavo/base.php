@@ -1,8 +1,6 @@
 <?php
 include "conexao.php";
 session_start();
-
-$_SESSION["login"]=$value;
 ?>
 
 <!DOCTYPE html>
@@ -19,18 +17,18 @@ $_SESSION["login"]=$value;
     <nav class=navbar>
         <ul class="ul">
             <a href="index.php"><button class="a">inicio</button></a>
-            <a href="coisitas.php"><button class="a">coisitas</button></a>
+            <a href="coisitas.php"><button class="a">cadastro e login</button></a>
             <a href="artes.php"><button class="a">artes</button></a>
             <a href="testes.php"><button class="a" >testes</button></a>
-            <a href="sobre.php"><button class="a">sobre mim</button></a>           
+            <a href="sobre.php"><button class="a">sobre mim</button></a>        
         </ul>
-        <?php
-            $sql = "SELECT login FROM usuarios";
-            $query = mysqli_query($link, $sql);
-            $row = mysqli_fetch_assoc($query);
-            echo $row['login'];
-        ?>
-        <a href="sair.php"><button>Sair</button></a>
+        <div class='log'>
+            <?php
+                echo "Usuario: ". $_SESSION['usuariologin'];    
+            ?>
+            <br>
+            <a href="sair.php"><button class='logb'>Sair</button></a>
+        </div>      
     </nav>
 </header>
 
