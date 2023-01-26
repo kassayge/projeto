@@ -19,7 +19,7 @@ session_start();
             <a href="index.php"><button class="a">inicio</button></a>
             <a href="coisitas.php"><button class="a">cadastro e login</button></a>
             <a href="artes.php"><button class="a">artes</button></a>
-            <a href="testes.php"><button class="a" >testes</button></a>
+            <a href="testes.php"><button class="a" >comentarios</button></a>
             <a href="sobre.php"><button class="a">sobre mim</button></a>        
         </ul>
         <div class='log'>
