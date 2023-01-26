@@ -1,9 +1,8 @@
 <?php 
     require_once ("conexao.php");
 
-
     $login = $_POST['login'];
-    $senha = $_POST['senha']; 
+    $senha = $_POST['senha'];  
     
     $sql = "INSERT INTO `usuarios` VALUES (null, '$login', MD5('$senha'))";
 
