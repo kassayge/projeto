@@ -20,12 +20,11 @@
 }
 
 .navbar{
-  background-color: rgba(85, 55, 114, 0.1);
-  margin-top: none;
+  margin-top: 55px;
   padding-top: 0.5px;
   padding-bottom: 0px;
-  position:sticky;
-  text-align: center;
+  position:static;
+  text-align: justify;
 }
 
 .a{
@@ -235,21 +234,36 @@
 
 .log{
     background-color: rgba(76, 58, 99, 0.9);
-    margin: 10px auto 10px auto;
+
+    margin-left: 85%;
+    margin-top: -120px;
+    margin-bottom: 10px;
     margin-bottom: none;
     padding: 5px;
-    width: 150px;
+    width: 200px;
+    text-align: center;
     font-size: 20px;
     color:#d31a67;
-    border-radius: 20px;
-       
+    border-radius: 10px;
 }
 
+.pqp{
+  text-align: center;
+  margin: 0px;
+}
 
+.perfil{
+  width: 70px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  border-radius: 50%;
+}
 
 .logb{
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
     font-size: 20px;
     color: rgb(0, 0, 0);
     background-color: rgba(99, 61, 134, 0.8);
@@ -354,9 +368,10 @@
 }
 
 
-.test{
+.testleft{
   background-color: rgba(70, 54, 92, 0.9);
-  margin-left: 5px;
+  margin-left: 100px;
+
   padding: 10px;
   width: 550px;
   min-height:300px;
@@ -364,10 +379,23 @@
   font-size: 28px;
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color:#9716b8;
+  float:left;
+}
+.testright{
+  background-color: rgba(70, 54, 92, 0.9);
+  margin-left: 300px;
+  padding: 10px;
+  width: 550px;
+  min-height:300px;
+  display:flex;
+  font-size: 28px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#9716b8;
+  float: left;
+  place-content: end content;
 }
 
-
-  .inputC{
+ .inputC{
     margin-top: 10px;
     margin-left: 0px;
     margin-right: 40px;
@@ -391,3 +419,80 @@
   .inputC:active {
     background-color: rgba(118, 25, 146, 0.7);
   }
+
+
+ .tab{
+  background-color: rgb(141, 109, 185);
+  border-radius: 5%;  
+  border-collapse: collapse;
+  border-spacing: none;
+  font-size: 20px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#4a2d53;
+  border-spacing: 0;
+  empty-cells: hide;
+}
+
+.aa{
+  font-size: 18px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-spacing: 0;
+  empty-cells: hide;
+  margin: 0px;
+  padding: 2px;
+  width: 30px;
+  min-height:15px;
+} 
+
+  .texto{
+    font-size: 19px;
+  }
+
+  .img{
+    background-color: rgba(76, 58, 99, 0.9);
+    margin-left: 50px;
+    margin-top: 0px;
+    padding: 10px;
+    width: 450px;
+    min-height:100px;
+    font-size: 25px;
+    color:#8b8b8b;
+  }
+
+  .perfilA{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 40px;
+    padding: 5px;
+    font-size: 20px;
+    color: rgb(250, 250, 250);
+    background-color: rgba(119, 89, 133, 0.8);
+    text-align: start;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .inputB{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 40px;
+    font-size: 20px;
+    color: rgb(250, 250, 250);
+    background-color: rgba(64, 15, 87, 0.8);
+    transition: background-color 0.5s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 25px;
+    text-align: start;
+    border-radius: 10%;
+    border: none;
+  }
+  
+  .inputB:hover{
+    background-color: rgba(97, 61, 131, 0.7);
+  }
+  
+  .inputB:active {
+    background-color: rgba(118, 25, 146, 0.7);
+  } 
