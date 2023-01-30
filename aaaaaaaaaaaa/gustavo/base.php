@@ -13,8 +13,8 @@ session_start();
     <title>recriando...</title>
     <link rel="stylesheet" href="home.css"/>
 </head>
-<header>
-    <nav class=navbar>
+<header>     
+    <nav class=navbar> 
         <ul class="ul">
             <a href="index.php"><button class="a">inicio</button></a>
             <a href="coisitas.php"><button class="a">cadastro e login</button></a>
@@ -23,12 +23,14 @@ session_start();
             <a href="sobre.php"><button class="a">sobre mim</button></a>        
         </ul>
         <div class='log'>
-            <?php
-                echo "Usuario: ". $_SESSION['usuariologin'];    
-            ?>
+        <p class='pqp'><?php
+                echo " ". $_SESSION['usuariologin'];    
+            ?></p>
+            <img class='perfil' src="./static/imagens/padrão.png" alt="foto de perfil">
             <br>
+            <a   href="perfil.php"><button class='logb'>perfil</button></a>
             <a href="sair.php"><button class='logb'>Sair</button></a>
-        </div>      
+        </div>
     </nav>
 </header>
 

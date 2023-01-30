@@ -6,7 +6,5 @@ include "base.php"
         bem-vindo a area de teste do kassayge 😄 
     </div>
 </body>
+
 </html>
-<?php
-include "footer.php"
-?>
