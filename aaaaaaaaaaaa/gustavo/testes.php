@@ -4,6 +4,7 @@ include "textoDO.php"
 ?>
 
 <body class="testes">
+
     <div class="testleft">
         <form method="POST" action="testesDO.php" id='texto'>
             <label>comentário</label>
@@ -39,6 +40,7 @@ include "textoDO.php"
              echo "Sem Registro.";
          }
         ?>
+
     </div>
 </body>
 
