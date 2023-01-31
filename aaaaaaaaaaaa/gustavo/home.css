@@ -20,7 +20,8 @@
 }
 
 .navbar{
-  margin-top: 55px;
+  margin-top: 25px;
+  margin-bottom: 65px;
   padding-top: 0.5px;
   padding-bottom: 0px;
   position:static;
@@ -236,8 +237,8 @@
     background-color: rgba(76, 58, 99, 0.9);
 
     margin-left: 85%;
-    margin-top: -120px;
-    margin-bottom: 10px;
+    margin-top: -75px;
+    margin-bottom: 0px;
     margin-bottom: none;
     padding: 5px;
     width: 200px;
@@ -451,7 +452,7 @@
   .img{
     background-color: rgba(76, 58, 99, 0.9);
     margin-left: 50px;
-    margin-top: 0px;
+    margin-top: 80px;
     padding: 10px;
     width: 450px;
     min-height:100px;
@@ -462,15 +463,26 @@
   .perfilA{
     margin-top: 10px;
     margin-left: 5px;
-    margin-right: 40px;
-    padding: 5px;
-    font-size: 20px;
+    margin-right: 12px;
+    padding: 1px;
+    font-size: 18px;
     color: rgb(250, 250, 250);
     background-color: rgba(119, 89, 133, 0.8);
     text-align: start;
     border: none;
     border-radius: 10px;
   }
+  .perfilA[type="file"]{
+    display: flex;
+  }
+
+  .perfilA:file-selector-button{
+    padding: none;
+    border: none;
+    margin: none;
+  }
+
+
 
   .inputB{
     margin-top: 10px;
@@ -480,10 +492,10 @@
     color: rgb(250, 250, 250);
     background-color: rgba(64, 15, 87, 0.8);
     transition: background-color 0.5s;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 15px;
     text-align: start;
     border-radius: 10%;
     border: none;

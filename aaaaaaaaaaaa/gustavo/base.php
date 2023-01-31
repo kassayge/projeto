@@ -1,6 +1,18 @@
 <?php
 include "conexao.php";
 session_start();
+$login = $_SESSION['usuariologin'];
+
+$sql = "SELECT * FROM 'imagens' WHERE login = '$login'";
+$avatar = $link->query($sql);
+
+if ($avatar->num_rows > 0) {
+    while($row = $avatar->fetch_assoc()) {
+        $img = $row['img'];
+        #echo $img;
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -16,21 +28,30 @@ session_start();
 <header>     
     <nav class=navbar> 
         <ul class="ul">
-            <a href="index.php"><button class="a">inicio</button></a>
-            <a href="coisitas.php"><button class="a">cadastro e login</button></a>
+            <a href="index.php"><button class="a">inicio</button></a>  
             <a href="artes.php"><button class="a">artes</button></a>
-            <a href="testes.php"><button class="a" >comentarios</button></a>
             <a href="sobre.php"><button class="a">sobre mim</button></a>        
-        </ul>
-        <div class='log'>
-        <p class='pqp'><?php
-                echo " ". $_SESSION['usuariologin'];    
-            ?></p>
-            <img class='perfil' src="./static/imagens/padrão.png" alt="foto de perfil">
-            <br>
-            <a   href="perfil.php"><button class='logb'>perfil</button></a>
-            <a href="sair.php"><button class='logb'>Sair</button></a>
-        </div>
+        <!-- </ul> -->
+    
+        <?php
+            if ($_SESSION['usuariologin'] &&  $_SESSION['NiveisAcesso'] == 1) {
+                //print("<ul>"); 
+                print(" <a href='testes.php'><button class='a' >comentarios</button></a>
+                        <div class='log'>
+                            <p class='pqp'>
+                             $login
+                            </p>
+                            <img class='perfil' src='./static/perfil_img/'$img'' alt='foto de perfil'
+                            <br>
+                            <a href='perfil.php'><button class='logb'>perfil</button></a>
+                            <a href='sair.php'><button class='logb'>Sair</button></a>
+                        </div>");
+               // print("");
+            } else {
+                //print(""); 
+                print("<a href='coisitas.php'><button class='a'>cadastro e login</button></a>");
+                print("</ul>");}
+        ?>
     </nav>
 </header>
 
