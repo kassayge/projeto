@@ -2,13 +2,13 @@
 include "base.php";
 ?>
 
-<body class="sobre">
-    <div class='img'>
+<body class="sobre"> 
         <form enctype="multipart/form-data" action="perfilDO.php" method="post">
-             <input name="userfile" type="file" id='file' class='perfilA'/> <!-- <label for='file' class='perfil'>selecione uma imagem para o seu perfil</label> -->
-            <br>
-            <input type="submit" value="Enviar" accept=".jpg .png" class='inputB'/>
-        </form>
-    </div> 
+            <div class='img'>
+                <label for='file'>adicione sua foto de perfil</label>
+                <input name="userfile" type="file" id='file' class='perfilA' accept=".jpg, .png" /> 
+                <input type="submit" value="Enviar" accept=".jpg .png" class='inputB'/>
+            </div>
+        </form>  
 </body>
 </html>
