@@ -88,6 +88,8 @@ RUN docker-php-ext-configure intl \
     intl \
     gettext
 
+COPY ./php/php.ini /usr/local/etc/php/php.ini
+
 RUN chown -R www-data:www-data /var/www/html
 
 expose 80

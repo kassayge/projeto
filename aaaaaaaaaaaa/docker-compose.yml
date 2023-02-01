@@ -6,8 +6,8 @@ networks:
 services:
   bolaof1:
     build:
-      context: ./gustavo
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: ./gustavo/Dockerfile
     container_name: "gustavo"
     restart: "no"
     ports:
