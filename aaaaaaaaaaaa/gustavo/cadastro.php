@@ -5,6 +5,7 @@
     $senha = $_POST['senha'];  
     $query_select = "SELECT login FROM usuarios WHERE login = '$login'";
     $sql = "INSERT INTO `usuarios` VALUES (null, 1, '$login', MD5('$senha'))";
+    $sql2 = "INSERT INTO `imagens` VALUES (null, '$login', 'padrao.png');";
     $select =  mysqli_query($link, $query_select);
     $array = mysqli_fetch_array($select);
     $logarray = $array['login'];
@@ -21,11 +22,13 @@
             die();
     
           }else{
-            $query = "INSERT INTO usuarios (id, login, senha) VALUES (null, 1, '$login', MD5('$senha'))";
+            $query = "INSERT INTO usuarios (id, nivel, login, senha) VALUES (null, 1, '$login', MD5('$senha'))";
             $insert = mysqli_query($link, $query);
+            
     
             if($insert){
-              echo"<script language='javascript' type='text/javascript'>alert('Usuário cadastrado com sucesso!');window.location.href='coisitas.php'</script>";
+              echo"<script language='javascript' type='text/javascript'>alert('Usuario cadastrado com sucesso!');window.location.href='coisitas.php'</script>";
+              $im = mysqli_query($link, $sql2);
             }else{
               echo"<script language='javascript' type='text/javascript'>alert('Não foi possível cadastrar esse usuário');window.location.href='coisitas.php'</script>";
             }
