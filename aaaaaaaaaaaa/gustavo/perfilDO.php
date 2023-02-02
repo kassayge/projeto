@@ -2,8 +2,12 @@
 include "conexao.php";
 session_start();
 
+
+
 $img = $_FILES['userfile']['name'];
+//rename($img, 'avatar-'. $_SESSION['usuariologin']);
 $usu = $_SESSION['usuariologin'];
+
 $sql = "UPDATE `imagens` SET `login`='$usu',`img`='$img'";
 $envio = mysqli_query($link, $sql);
 
@@ -17,5 +21,6 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
     echo "<script>window.location='testes.php';alert('houve problema ao enviar imagem, tente novamente mais tarde');</script>";
     return false;
 }  
+
 ?>
 
