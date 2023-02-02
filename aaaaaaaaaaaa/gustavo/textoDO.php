@@ -3,9 +3,10 @@
     
     $usuario = $_SESSION['usuariologin'];
     
-    $sql = "SELECT * FROM `comentarios` WHERE login = '$usuario'";
-    $texto = $link->query($sql);
-
+    $sql = "SELECT * FROM `comentarios` ORDER BY id desc"; //WHERE login = '$usuario' modificação so pro usuario logado
+    $texto = mysqli_query($link, $sql); 
+// $link->query($sql); se der problema tenta essa query
+?>
         
     
         

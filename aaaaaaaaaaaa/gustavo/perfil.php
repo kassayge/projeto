@@ -3,7 +3,9 @@ include "base.php";
 ?>
 
 <body class="sobre"> 
-    <form action="perfilDO.php" method="post" enctype="multipart/form-data">
+
+    <form enctype="multipart/form-data" action="perfilDO.php" method="POST">
+
         <div class='img'>
             <label for='file'>adicione sua foto de perfil</label>
             <input name="userfile" type="file" id='file' class='perfilA' accept=".jpg, .png" /> 
