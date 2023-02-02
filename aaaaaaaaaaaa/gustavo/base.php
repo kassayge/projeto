@@ -17,7 +17,7 @@ if ($avatar->num_rows > 0) {
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="ISO-8859-1">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./static/imagens/favicon.ico" type="image/ico">
@@ -40,7 +40,7 @@ if ($avatar->num_rows > 0) {
                             <p class='pqp'>
                              $login
                             </p>
-                            <img class='perfil' src='./static/perfil_img/$img' alt='foto de perfil'
+                            <img class='perfil' src='./static/perfil_img/$img' alt='foto de perfil'>
                             <br>
                             <a href='perfil.php'><button class='logb'>perfil</button></a>
                             <a href='sair.php'><button class='logb'>Sair</button></a>

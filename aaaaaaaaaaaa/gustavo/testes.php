@@ -16,29 +16,37 @@ include "textoDO.php"
         </form>
     </div>
     <div class="testright">
+        <p>
         <?php
-         if ($texto->num_rows > 0) {
-                    echo"
-                        <table class='texto'>
-                            <thead>
-                                <tr>
-                                    <th>Usuario</th>   
-                                    <th>Comentário</th>
-                                </tr>
-                            </thead>";
-                    echo "<tbody class='tab'>";
-            while($row = $texto->fetch_assoc()) {
-                    echo "
-                            <tr> <br>
-                                <td class='aa'>".$row['login']."</td>
-                                <td>".$row['texto']."</td>
-                            </tr>";}
-
-                    echo "</tbody>
-                    </table>";         
-         } else {
-             echo "Sem Registro.";
-         }
+            while($exibir = mysql_fetch_array($texto)){
+                echo $exibir['login'];
+                echo "</br>";
+                echo $exibir['texto'];
+                echo "</br></p>";}
+         //if ($texto->num_rows > 0) {
+                    // echo"
+                    //     <table class='texto'>
+                    //         <thead>
+                    //             <tr>
+                    //                 <th>Usuario</th>   
+                    //                 <th>Comentário</th>
+                    //             </tr>
+                    //         </thead>";
+                    // echo "<tbody class='tab'>";
+                    
+            // while($row = $texto->fetch_assoc()) {
+                    // echo "
+                    //         <tr> <br>
+                    //             <td class='aa'>".$row['login']."</td>
+                    //             <td>".$row['texto']."</td>
+                    //         </tr>";
+                                    //  }
+                    // echo "</tbody>
+                    // </table>";        
+                    
+        //  } else {
+        //      echo "Sem Registro.";
+        //  }
         ?>
 
     </div>
