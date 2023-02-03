@@ -40,7 +40,6 @@ if ($avatar->num_rows > 0) {
                             <p class='pqp'>
                              $login
                             </p>
-
                             <img class='perfil' src='./static/perfil_img/$img' alt='foto de perfil'>
                             <br>
                             <a href='perfil.php'><button class='logb'>perfil</button></a>
