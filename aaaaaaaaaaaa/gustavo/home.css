@@ -397,42 +397,42 @@
   border-radius: 10px;
 }
 
- .inputC{
-    margin-top: 10px;
-    margin-left: 0px;
-    margin-right: 40px;
-    font-size: 20px;
-    color: rgb(250, 250, 250);
-    background-color: rgba(64, 15, 87, 0.8);
-    transition: background-color 0.5s;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    text-align: center;
-    border-radius: 10%; 
-    border: none;
-  }
-  
-  .inputC:hover{
-    background-color: rgba(97, 61, 131, 0.7);
-  }
-  
-  .inputC:active {
-    background-color: rgba(118, 25, 146, 0.7);
-  }
-
-
- .tab{
-  background-color: rgb(141, 109, 185);
-  border-radius: 2%;  
-  border-collapse:separate;
-  border-spacing: 3px;
+.inputC{
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 40px;
   font-size: 20px;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color:#4a2d53;
-  border-spacing: none;
-  empty-cells: hide;
+  color: rgb(250, 250, 250);
+  background-color: rgba(64, 15, 87, 0.8);
+  transition: background-color 0.5s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  border-radius: 10%; 
+  border: none;
+}
+
+.inputC:hover{
+  background-color: rgba(97, 61, 131, 0.7);
+}
+
+.inputC:active {
+  background-color: rgba(118, 25, 146, 0.7);
+}
+
+
+.tab{
+background-color: rgb(141, 109, 185);
+border-radius: 2%;  
+border-collapse:separate;
+border-spacing: 3px;
+font-size: 20px;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color:#4a2d53;
+border-spacing: none;
+empty-cells: hide;
 }
 
 .aa{
@@ -446,78 +446,74 @@
   min-height:15px;
 } 
 
-  /* .texto{
-    font-size: 16px;
-    display:flex;
-  } */
+.img{
+  background-color: rgba(76, 58, 99, 0.9);
+  margin-left: 50px;
+  margin-top: 80px;
+  padding: 10px;
+  width: 450px;
+  min-height:100px;
+  font-size: 25px;
+  color:#8b8b8b;
+}
 
-  .img{
-    background-color: rgba(76, 58, 99, 0.9);
-    margin-left: 50px;
-    margin-top: 80px;
-    padding: 10px;
-    width: 450px;
-    min-height:100px;
-    font-size: 25px;
-    color:#8b8b8b;
-  }
+.perfilA{
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 12px;
+  padding: 1px;
+  font-size: 18px;
+  color: rgb(250, 250, 250);
+  background-color: rgba(119, 89, 133, 0.8);
+  text-align: start;
+  border: none;
+  border-radius: 10px;
+}
+.perfilA[type="file"]{
+  display: flex;
+}
 
-  .perfilA{
-    margin-top: 10px;
-    margin-left: 5px;
-    margin-right: 12px;
-    padding: 1px;
-    font-size: 18px;
-    color: rgb(250, 250, 250);
-    background-color: rgba(119, 89, 133, 0.8);
-    text-align: start;
-    border: none;
-    border-radius: 10px;
-  }
-  .perfilA[type="file"]{
-    display: flex;
-  }
-
-  .perfilA:file-selector-button{
-    padding: none;
-    border: none;
-    margin: none;
-  }
+.perfilA:file-selector-button{
+  padding: none;
+  border: none;
+  margin: none;
+}
 
 
 
-  .inputB{
-    margin-top: 10px;
-    margin-left: 5px;
-    margin-right: 40px;
-    font-size: 20px;
-    color: rgb(250, 250, 250);
-    background-color: rgba(64, 15, 87, 0.8);
-    transition: background-color 0.5s;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 15px;
-    text-align: start;
-    border-radius: 10%;
-    border: none;
-  }
-  
-  .inputB:hover{
-    background-color: rgba(97, 61, 131, 0.7);
-  }
-  
-  .inputB:active {
-    background-color: rgba(118, 25, 146, 0.7);
-  } 
+.inputB{
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 40px;
+  font-size: 20px;
+  color: rgb(250, 250, 250);
+  background-color: rgba(64, 15, 87, 0.8);
+  transition: background-color 0.5s;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 15px;
+  text-align: start;
+  border-radius: 10%;
+  border: none;
+}
+
+.inputB:hover{
+  background-color: rgba(97, 61, 131, 0.7);
+}
+
+.inputB:active {
+  background-color: rgba(118, 25, 146, 0.7);
+} 
 
 
 .comper{
-  text-align: justify;
-  margin: 5px;
+text-align: justify;
+margin: 5px;
+overflow: auto;
 }
 
 .azin{
-  font-size: 15px;
-  margin-left: 480px;
+font-size: 15px;
+margin-left: 480px;
 }

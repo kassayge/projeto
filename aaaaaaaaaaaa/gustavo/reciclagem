@@ -1,0 +1,33 @@
+
+//javascript pagina testes.php objetivo: filtrar nome numa lista
+//    <input type="text" id="procurar"/>
+//             <select id="lista">
+//                 <option>kassayge</option>
+//                 <option>jaison</option>
+//                 <option>kass</option>
+//             </select>
+            
+//             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+//                 $('#procurar').keyup(function () {
+//                     var valthis = $(this).val().toLowerCase();
+//                     var num = 0;
+//                     $('select#lista>option').each(function () {
+//                         var text = $(this).text().toLowerCase();
+//                         if(text.indexOf(valthis) !== -1){
+//                             $(this).show(); $(this).prop('selected',true);
+//                         }else{
+//                             $(this).hide();
+//                         }
+//                     });
+//                 });
+//             </script> 
+
+
+//pagina testesDO.php objetivo: query anterior a essa
+// $sql = "INSERT INTO `comentarios` VALUES (null, '$usuario', '$texto')";
+// if ($link->query($sql) === TRUE) {
+//     echo "oi";
+// }
+// else{
+//     echo "tchau";
+// }

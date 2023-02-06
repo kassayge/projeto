@@ -34,10 +34,3 @@
             }
           }
         }
-
-    // if ($link->query($sql) === TRUE) {
-    //     echo "<script>window.location='coisitas.php';alert('Cadastro efetuado com sucesso!');</script>";
-    // }
-    // else{
-    //     echo "<script>window.location='coisitas.php';alert('houve erro ao cadastrar tente novamente mais tarde');</script>";
-    // }

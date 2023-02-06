@@ -5,7 +5,7 @@
     $texto = $_POST['texto'];
     $data = date('Y/m/d');
 
-    // $sql = "INSERT INTO `comentarios` VALUES (null, '$usuario', '$texto')";
+
 
     if($usuario != '' && $texto != ''){    
         $query = "INSERT INTO `comentarios`(`id`, `login`, `texto`, `data`) VALUES (null ,'$usuario','$texto','$data')";
@@ -15,10 +15,4 @@
         echo "<script>window.location='testes.php';alert('texto não foi enviado, tente novamente mais tarde');</script>";
         return false;
     }
-    // if ($link->query($sql) === TRUE) {
-    //     echo "oi";
-    // }
-    // else{
-    //     echo "tchau";
-    // }
-
+   

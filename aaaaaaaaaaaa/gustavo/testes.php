@@ -1,7 +1,8 @@
 <?php
 include "base.php";
-include "textoDO.php"
- ?>
+include "textoDO.php";
+//include "filtroDO.php";
+?>
 
 <body class="testes">
 
@@ -16,11 +17,13 @@ include "textoDO.php"
          </form>
      </div>
     <div class="testright">
+        <a href="filtroDO.php"><button>meus comentarios</button></a>
         <?php while($text = mysqli_fetch_array($texto)){
                 echo "<div class = 'comper'>";
                 echo $text['login']. "<div class='azin'>". $text['data']. "</div>";
                 echo $text['texto'];
                 echo "</div>";
+                echo "<hr>";    
                 echo "</br>";           
             }
 
