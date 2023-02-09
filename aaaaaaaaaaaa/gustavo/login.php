@@ -16,21 +16,16 @@ if((isset($_POST['login'])) && (isset($_POST['senha']))){
         $_SESSION['NiveisAcesso'] = $resultado['nivel'];
         $_SESSION['usuariologin'] = $resultado['login'];
         echo"<script language='javascript' type='text/javascript'>alert('bem vindo');window.location.href='index.php';</script>";
-        // if($_SESSION['NiveisAcesso'] == "1"){
-        //      header("location: base.php");
-        // }else{
-        //     header("Location: coisitas.php");
-        // }
-    
+
     }else{    
         $_SESSION['loginErro'] = "Usuário ou senha Inválido";
-        header("Location: coisitas.php");
+        //header("Location: coisitas.php");  esse aqui retorna pro link
         echo "<script>window.location='coisitas.php';alert('senha ou login errado');</script>";
     }
 
 }else{
     $_SESSION['loginErro'] = "Usuário ou senha inválido";
-    header("Location: coisitas.php");
+    //header("Location: coisitas.php"); 
     echo "<script>window.location='coisitas.php';alert('houve erro ao entrar no seu login, tente novamente mais tarde');</script>";
 }
 ?>
