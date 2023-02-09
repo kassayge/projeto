@@ -3,6 +3,7 @@
 
     $name = $_POST['pesquisar'];
 
+
     $sql = "SELECT * FROM `comentarios` ORDER BY id desc"; //WHERE login = '$usuario' modificação so pro usuario logado
     $filtro = "SELECT * FROM `comentarios` WHERE login LIKE '%$name%' ORDER BY id desc";
 
@@ -14,3 +15,4 @@
 
     }
 ?>
+
