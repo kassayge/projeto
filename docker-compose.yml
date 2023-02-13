@@ -4,14 +4,14 @@ networks:
   prochnow:
 
 services:
-  bolaof1:
+  sitegu:
     build:
       context: .
       dockerfile: ./gustavo/Dockerfile
-    container_name: "gustavo"
+    container_name: "sitegu"
     restart: "no"
     ports:
-      - 8001:80
+      - 9001:80
     volumes:
       - ./gustavo:/var/www/html
     extra_hosts:
@@ -19,14 +19,14 @@ services:
     networks:
       - prochnow
 
-  bd:
+  bd-gu:
     image: mysql:5.7
     env_file:
       - ./mysql/.env
-    container_name: "bd"
+    container_name: "bd-gu"
     restart: "no"
     ports:
-      - 3306:3306
+      - 3306:4306
     volumes:
       - ./mysql/conf/mysql.conf.cnf:/etc/mysql/conf.d/mysql.conf.cnf
       - ./mysql/conf/my.cnf:/etc/my.cnf
@@ -35,15 +35,6 @@ services:
     networks:
       - prochnow
     
-  phpmyadmin:
-    image: phpmyadmin:latest
-    networks:
-      - prochnow
-    ports:
-      - "8080:80"
-    environment:
-      - PMA_ARBITRARY=1 
-
   npm:
     image: 'jc21/nginx-proxy-manager:latest'
     container_name: nginx_proxy_mamanger

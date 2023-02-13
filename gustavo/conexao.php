@@ -1,5 +1,6 @@
 <?php
-$server = "bd";
+$port = "4306";
+$server = "bd-gu";
 $usuario = "root";
 $senha = "Jaison@051689";
 $bd = "registro";
